@@ -78,3 +78,8 @@ insomnia - {
 }
 
 backend - const { title, description } = request.body;
+
+Middleware:
+
+Interceptador de requisições que interrompe totalmente a requisição
+ou alterar dados da requisição.
