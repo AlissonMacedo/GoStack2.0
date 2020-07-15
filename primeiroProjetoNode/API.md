@@ -55,3 +55,26 @@ Http codes
 
 - 5xx Server error
   - 500 internal server error
+
+---
+
+Query params: Filtros e paginação
+
+insomnia - http://localhost:3333/projects?title=React&owner=Diego
+
+backend - const { title, owner } = request.query
+
+Route Params: Identificador de recursos
+
+insomnia = http://localhost:3333/projects/:id
+
+backend - const { id } = request.params
+
+Request Body - Conteudo para criar ou editar um recurso (JSON)
+
+insomnia - {
+"title": "aplicativo",
+"description": "descricao do app"
+}
+
+backend - const { title, description } = request.body;
